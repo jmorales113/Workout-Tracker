@@ -1,11 +1,6 @@
 const mongoose = require('mongoose')
 const db = require('../models')
 
-// db.Workout.find({})
-// db.Workout.create({})
-// db.Workout.findByIdAndUpdate
-// db.Workout.find({}).limit(7)
-
 function apiRoutes(app) {
     app.get("/api/workouts", (req, res) => {
         db.Workout.find({})
@@ -42,17 +37,14 @@ function apiRoutes(app) {
             res.json(error)
         })
     })
+    app.get("/api/workouts/range", (req,res) => {
+        db.Workout.find({}).limit(10)
+        .then((result) => {
+            res.json(result)
+        }).catch((error) =>{
+            res.json(error)
+        })
+    })
 }
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = apiRoutes
