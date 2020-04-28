@@ -6,7 +6,7 @@ Task: When the user loads the page, they should be given the option to create a 
 The user should be able to add exercises to a previous workout plan and add new exercises to a new workout plan.
 
 Heroku link: https://murmuring-retreat-30975.herokuapp.com/
-GitHub pages link: 
+GitHub pages link: https://jmorales113.github.io/Homework-Workout-Tracker/
 
 ![image](https://user-images.githubusercontent.com/57970306/80446672-58a2ed80-88cc-11ea-8ce5-3447b7f7c628.png)
 
