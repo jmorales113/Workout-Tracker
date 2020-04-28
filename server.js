@@ -20,6 +20,10 @@ const htmlRoutes = require('./routes/html')
 apiRoutes(app)
 htmlRoutes(app)
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
+
+mongoose.connect(MONGODB_URI)
+
 app.listen(PORT, function() {
   console.log('App is listening on http://localhost:' + PORT)
 })
