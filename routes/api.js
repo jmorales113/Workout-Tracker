@@ -38,7 +38,7 @@ function apiRoutes(app) {
         })
     })
     app.get("/api/workouts/range", (req,res) => {
-        db.Workout.find({}).limit(10)
+        db.Workout.find({}).limit(7)
         .then((result) => {
             res.json(result)
         }).catch((error) =>{
