@@ -1,4 +1,4 @@
-# Homework-Workout-Tracker
+# Workout-Tracker
 
 User Story: As a user, I want to be able to view create and track daily workouts.
 
